@@ -5,6 +5,7 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
 body {
   margin: 0px;
   padding: 0;
@@ -26,101 +27,85 @@ img {
   height: auto;
 }
 
-nav {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 0;
-  margin-top: 0;
-}
-
-ul,
-li {
-  list-style-type: none;
-  margin-right: 10px;
-
-}
-
-.nav-bar,
-a {
-  text-decoration: none;
-  color: #5b5e6d;
+/*BUTTONS*/
+.btn {
+  font-weight: bold;
+  padding: 15px 30%;
+  border-radius: 3px;
+  margin: 2%;
   flex-grow: 1;
 }
 
-.regular-menu li {
-  display: none;
-}
+.btn-input {
+  font-weight: bold;
+  padding: 15px 20%;
+  border-radius: 3px;
+  margin: 1% 2%;
+  flex-grow: 1;
 
-.nav-menu {
+}
+.container1 {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
-
-}
-
-.flex-container {
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: 510px) {
-  .nav-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    display: none;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 961px) {
-  .logo-container {
-    flex-wrap: wrap;
-  }
-  .logo-container div {
-    width: 45%;
-    flex-direction: row;
-    padding: 0;
-  }
-
-  main img {
-    width: 40%;
-  }
-
-  .footer-img img {
-    padding-left: 20%;
-  }
-
-  .fa-footer img {
-    width: 10%;
-    height: auto;
-  }
-}
-
-.footer-container ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
-
-.footer-container .footer-img {
-  justify-content: flex-start;
-  padding-left: 30px;
-  width: 40%;
-  height: auto;
+.container2 {
+  display: flex;
+  flex-direction: column;
+  
+}
+.footer-input {
+  font-weight: bold;
+  padding: 15px 1%;
+  border-radius: 3px;
+  margin: 0 5%;
 }
 
-.start-button {
-  width: 30%;
-  text-align: center;
-  flex-wrap: nowrap;
+.start-btn {
+  background-color: #192592;
+  color: white;
+  border: none;
+  
+
 }
 
-/*Break*/
+.discover-btn {
+  color: #192592;
+  border: solid .5px rgb(25, 37, 146);
+  margin: 2%;
+  padding: 15px 10%;
+}
 
+.button-container {
+  display: flex;
+  margin: 1% 4%;
+  padding: 2%;
+}
 
+.company-footer .btn-input {
+  width: 70%;
+}
 
+input {
+  border: solid .5px rgb(211, 211, 211);
+  text-align: left;
+}
+
+/* HEADER*/
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin: 4%;
+}
+
+.header-signin {
+  text-align: center
+}
+
+.header-container h1 {
+  width: 50%;
+}
 
 .hamburger-menu {
   width: 30px;
@@ -138,101 +123,52 @@ a {
 }
 
 .slack-img {
-  margin: 0;
+  margin-left: 4%;
   padding: 0;
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 
+nav {
 
-
-.header-container {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.header-container h1 {
-  width: 50%;
-
-}
-
-/* header*/
-
-.start-button {
-  background-color: #192592;
-  color: white;
-  padding: 15px 30%;
-  border: none;
-  border-radius: 3px;
-
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-
-}
-
-
-.form-container p {
-  text-align: center;
-}
-
-.header-container input {
-  padding: 10px 40px 10px 5px;
-  border-radius: 3px;
-  border: solid 1px rgb(211, 211, 211);
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-
-}
-
-.header-container {
-  display: flex;
-  margin: 0 5%;
-}
-
-/* good company */
-.company-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #F4F3F4;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 0;
+  margin: 4%;
 }
 
-.discover-button {
-  color: #192592;
-  font-weight: bold;
-  padding: 15px 30%;
-  border-radius: 3px;
-  border: solid .5px rgb(211, 211, 211);
-  flex-grow: 1;
-  margin-bottom: 10px;
+li {
+  list-style-type: none;
+  margin: 0;
 }
 
-.company-container p {
+li a {
+  text-decoration: none;
+  color: #2C303F;
+  display: none;
+}
+
+/* COMPANY CONTAINER*/
+.company-container {
+  background-color: #F4F3F4;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-container p,
+h2 {
   text-align: center;
   padding: 0 10%;
   color: #5b5e6d;
 }
 
 .company-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.company-bold-footer {
-  font-weight: bold;
-  margin: 7% 0 0 0;
+  text-align: center;
 }
 
 .logo-container {
-  border: solid 1px red;
+
   display: flex;
   background-color: #F4F3F4;
   flex-direction: column;
@@ -248,7 +184,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px green;
+
 
 }
 
@@ -265,17 +201,19 @@ a {
   border-bottom: none;
 }
 
-/**************/
+/*FOOTER 0f the page*/
 .footer-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-bottom: 10%;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   color: #5b5e6d;
+  padding-bottom: 5%;
 }
 
 .title {
@@ -284,12 +222,10 @@ a {
 
 .flex-container li {
   padding-bottom: 5%;
-
 }
 
 .footer-img {
   width: 100%;
-
 }
 
 .footer-img img {
@@ -299,11 +235,11 @@ a {
 .flex-container div {
   width: 50%;
   height: auto;
-
 }
 
 .fa-container li {
   font-weight: bold;
+
 }
 
 .fa-container ul {
@@ -315,10 +251,8 @@ a {
 }
 
 .fa-background {
-  background: #F4F3F4;
-  position: relative;
-
-  box-sizing: content-box;
+  background-color: #F4F3F4;
+  width: 100%;
 }
 
 .fa-footer {
@@ -350,4 +284,73 @@ a {
 .fa-footer-icons i {
   margin: 10px;
   color: #5b5e6d;
+}
+
+@media(min-width: 767px) and (max-width: 959px) {
+  body {
+    background: #2C303F;
+  }
+
+  img {
+    width: 70%;
+    height: auto;
+  }
+
+  .btn-input {
+    width: 50%;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+  }
+.header-signin{
+  text-align: left;
+}
+  .button-container {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .discover-btn {
+    text-align: center;
+    padding: 15px 10%;
+    margin-bottom: 10%;
+  }
+
+  .container1 button {
+    align-content: flex-start;
+    width: 40%;
+
+  }
+
+  .container1 input {
+    width: 50%;
+    padding: 5%;
+  }
+
+  .start-btn {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px 10%;
+    text-align: center;
+  }
+  .container2 input{
+    width: 50%;
+  }
+  .flex-container {
+    padding-bottom: 5%;
+  }
+
+  .logo-container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logo-container div {
+    border-right: 1px solid rgb(211, 211, 211);
+    width: 50%;
+  }
 }
