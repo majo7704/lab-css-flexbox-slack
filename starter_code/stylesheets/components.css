@@ -1,4 +1,4 @@
-/*Navigation*/
+
 .hamburger-menu {
   width: 30px;
   height: 20px;
@@ -13,9 +13,11 @@
   height: 4px;
   background-color: #5b5e6d;
 }
+.hamburger-menu:hover {
+  background-color:#192592;
+}
 
 nav {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
