@@ -1,0 +1,41 @@
+
+
+body {
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: #2C303F;
+}
+
+p {
+  color: #5b5e6d;
+}
+
+img {
+  width: 100%;
+  /*normal img size */
+  height: auto;
+}
+
+.slack-img {
+  margin-left: 4%;
+  padding: 0;
+  width: 40%;
+  height: auto;
+}
+
+/*media queries */
+@media(min-width: 767px) and (max-width: 959px) {
+  body {
+    background: #2C303F;
+  }
+
+  img {
+    width: 70%;
+    height: auto;
+  }
+}
